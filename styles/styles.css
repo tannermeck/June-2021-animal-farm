@@ -16,12 +16,13 @@ main {
 }
 
 header {
-    background-color: #A2D7D2;
+    background-color: lightslategrey;
     height: 110px;
     padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    opacity: 90%;
 }
 
 header img {
@@ -44,6 +45,19 @@ img {
     cursor: pointer;
     padding: 20px 20px 0px 20px;
 }
+img:hover {
+    animation: shakeImg 0.5s;
+    animation-iteration-count: infinite;
+ }
+ @keyframes shakeImg {
+    0% { transform: translate(1px, 1px) rotate(5deg); }
+    20% { transform: translate(-3px, 0px) rotate(10deg); }
+    30% { transform: translate(3px, 2px) rotate(-10deg); }
+    50% { transform: translate(-1px, 2px) rotate(-20deg); }
+    70% { transform: translate(3px, 1px) rotate(-25deg); }
+    90% { transform: translate(1px, 2px) rotate(10deg); }
+    100% { transform: translate(1px, -2px) rotate(-10deg); }
+ }
 button {
     border: black dotted 5px;
     font-family: cursive;

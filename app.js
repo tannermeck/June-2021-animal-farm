@@ -12,11 +12,11 @@
 const playCat = document.getElementById('play-cat');
 const catSound = document.getElementById('cat-sound');
 const cat = document.getElementById("cat")
-
+const catHide = document.getElementById("cat-hide")
 playCat.addEventListener('click', ()=>{
     catSound.play();
 });
-
+  
 cat.addEventListener('click', () => {
     catSound.play();
 });
