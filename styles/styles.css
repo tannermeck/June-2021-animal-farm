@@ -1,13 +1,18 @@
 
 body {        
     font-family: 'Titillium Web', sans-serif;
-    background-color: #FFFCFA;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-image: url('https://images7.alphacoders.com/313/313724.jpg');
+    background-size:cover;
 }
 
 main {
     padding: 30px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 100px;
 }
 
 header {
@@ -33,3 +38,26 @@ footer {
     background-color: #FAF0EA;
     padding: 10px;
 }
+img {
+    height: 400px;
+    width: 300px;
+    cursor: pointer;
+    padding: 20px 20px 0px 20px;
+}
+button {
+    border: black dotted 5px;
+    font-family: cursive;
+    color: brown;
+    background-color: lightblue;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px;
+}
+audio,
+button {
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    justify-content:center;
+}
+
